@@ -1,0 +1,238 @@
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top, rgba(45, 212, 191, 0.14), transparent 40%),
+    linear-gradient(180deg, #334155 0%, #1e293b 100%);
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 26rem;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 32px 80px rgba(15, 23, 42, 0.3);
+}
+
+/* Brand */
+.signup-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.signup-brand-mark {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #14b8a6, #0f766e);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.signup-brand-name {
+  margin: 0;
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.signup-brand-sub {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+/* Heading */
+.signup-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-subtitle {
+  margin: 0 0 1.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Error */
+.signup-error {
+  padding: 0.7rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(244, 63, 94, 0.1);
+  color: #e11d48;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.signup-field {
+  margin-bottom: 1rem;
+}
+
+.signup-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.signup-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.signup-input-icon {
+  position: absolute;
+  left: 0.9rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.signup-input {
+  width: 100%;
+  height: 3rem;
+  padding: 0 2.8rem 0 2.5rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.85rem;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.signup-input::placeholder {
+  color: #94a3b8;
+}
+
+.signup-input:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+  background: #ffffff;
+}
+
+.signup-eye-btn {
+  position: absolute;
+  right: 0.75rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #94a3b8;
+  padding: 0.2rem;
+  line-height: 1;
+}
+
+/* Submit */
+.signup-submit-btn {
+  width: 100%;
+  padding: 0.875rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #14b8a6, #0f766e);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.signup-submit-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(20, 184, 166, 0.35);
+}
+
+.signup-submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.signup-submit-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* Footer */
+.signup-footer {
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.signup-link-btn {
+  border: none;
+  background: transparent;
+  color: #0f766e;
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.signup-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* Success state */
+.signup-success {
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+}
+
+.signup-success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 12px 30px rgba(5, 150, 105, 0.3);
+}
+
+.signup-success-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-success-sub {
+  margin: 0 0 1.75rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
